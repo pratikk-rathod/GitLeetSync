@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>GitLeetSync Settings</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>GitLeetSync Settings</h3>
+
+    <label>GitHub Personal Access Token (repo scope)</label>
+    <input id="pat" type="password" placeholder="ghp_xxx..." />
+
+    <label>Repo Owner</label>
+    <input id="owner" type="text" placeholder="your-github-username" />
+
+    <label>Repo Name</label>
+    <input id="repo" type="text" placeholder="leetcode-solutions" />
+
+    <label>Branch</label>
+    <input id="branch" type="text" value="main" />
+
+    <label>Folder template (use {slug} {title} variables)</label>
+    <input id="folderTemplate" type="text" value="leetcode/{language}/{slug}" />
+
+    <div style="margin-top:10px">
+      <button id="saveBtn">Save</button>
+      <button id="testBtn">Test Push (dry-run)</button>
+      <button id="clearTokenBtn">Clear Token</button>
+    </div>
+    <p style="font-size:12px; color:#c00; font-weight:bold">Warning: Your GitHub token is stored locally and never sent anywhere except GitHub. Keep it private and secure.</p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

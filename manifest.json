@@ -1,0 +1,35 @@
+{
+"manifest_version": 3,
+"name": "GitLeetSync — Push Accepted Solutions to GitHub",
+"version": "1.0.1",
+"description": "When a LeetCode submission is accepted, push the solution + problem statement + link to your GitHub repo.",
+"permissions": [
+"storage",
+"notifications",
+"scripting",
+"activeTab"
+],
+"host_permissions": [
+"https://leetcode.com/*",
+"https://*.github.com/*",
+"https://api.github.com/*"
+],
+"background": {
+"service_worker": "background.js"
+},
+"action": {
+"default_popup": "popup.html",
+"default_title": "GitLeetSync Settings"
+},
+"icons": {
+"48": "icons/icon48.png",
+"128": "icons/icon128.png"
+},
+"content_scripts": [
+{
+"matches": ["https://leetcode.com/problems/*", "https://leetcode.com/*"],
+"js": ["content.js"],
+"run_at": "document_idle"
+}
+]
+}
