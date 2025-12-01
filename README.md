@@ -1,4 +1,4 @@
-# GitGitLeetSync Extension - Quick Start Guide
+# GitLeetSync Extension - Quick Start Guide
 
 ## ✅ Installation & Setup
 
