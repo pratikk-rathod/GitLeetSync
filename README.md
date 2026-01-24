@@ -205,3 +205,5 @@ If something isn't working:
 4. Reload the extension (`chrome://extensions` → Reload)
 5. Check TROUBLESHOOTING.md for detailed help
 6. Connect with me on LinkedIn
+
+
